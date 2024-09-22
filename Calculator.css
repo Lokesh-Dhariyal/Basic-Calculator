@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Livvic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #212121;
+    color: white;
+}
+
+.main{
+    border: 1px #b1b1b1 solid;
+    width: 40vw;
+    height: 50vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+.input{
+    position: relative;
+border: 1px solid #b3b3b3;
+width: 85%;
+height: 26%;
+margin: auto;
+margin-top: 6.5%;
+background-color: #232323;
+display: flex;
+justify-content: end;
+overflow: hidden;
+border-radius: 3%;
+}
+.elements{
+    position: relative;
+    width: 90%;
+    height: 66%;
+    margin: auto;
+    margin-top:3% ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: initial;
+    justify-content: space-around;
+}
+.button{
+    position: relative;
+    border: 1px rgb(87, 87, 87) solid;
+    width: 17%;
+    height: 15%;
+    margin: 1% 2%;
+    font-size: 1.5rem;
+    border-radius: 10%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: #1e1e1e;
+    box-shadow: 1px 1px 1px #ffffffa8;
+}
+.ong{
+    color: orange;
+}
+#b20{
+    position: relative;
+    right: -2%;
+    width: 20%;
+    background-color: orange;
+    color: white;
+}
+#b20:hover{
+    background-color: #f4a700;
+    box-shadow: 1px 1px 1px #ff9c08a8;
+}
+
+#data{
+    width: auto;
+    height: 15%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    right:2%;
+    font-size: 2rem;
+}
+.mode{
+    border: 2px rgb(0, 0, 0) solid;
+    position: relative;
+    width: 10%;
+    height: 8%;
+    bottom: 7%;
+    left: 105%;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #b5b5b5;
+    background-image:url(./img/light.png);
+    background-size: cover;
+    background-position: 30% 1%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        width: 70vw;
+        height: auto;
+        margin: 50px auto;
+        border-radius: 10px;
+    }
+
+    .input {
+        width: 90%;
+        height: 120px;
+        margin: 5% auto;
+        border-radius: 5px;
+    }
+
+    .elements {
+        width: 90%;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .button {
+        width: 100%;
+        height: 60px;
+        font-size: 1.25rem;
+        border-radius: 5px;
+    }
+
+    #b20 {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    #data {
+    top: 80%;
+    width: auto;
+    height: 15%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    }
+
+    .mode {
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    left: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        width: 90vw;
+        height: auto;
+        margin:90px auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .input {
+        width: 90%;
+        height: 100px;
+        margin: 5% auto;
+        border-radius: 5px;
+    }
+
+    .elements {
+        width: 90%;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .button {
+        width: 90%;
+        height: 50px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    #b20 {
+        width: 93%;
+        font-size: 1rem;
+        right: 0;
+    }
+
+    #data {
+        top: 80%;
+    width: auto;
+    height: 15%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    }
+
+    .mode {
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    top: 5%;
+    left: 85%;
+    }
+}
+
